@@ -17,10 +17,7 @@ const Login = () => {
   const [isLoading, setIsLoading] = useState();
 
   return (
-    
     <>
-  
-    
       <Box
         h={"100vh"}
         border={"solid 1px red"}
@@ -58,6 +55,7 @@ const Login = () => {
               type="text"
             />
             <Input
+             
               boxShadow={"0 -1px 8px 1px rgba(0,0,0,0.2)"}
               placeholder="CPF"
             />

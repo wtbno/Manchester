@@ -8,6 +8,9 @@ import NavBar from "../../components/NavBar";
 
 //Slider
 
+
+
+
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 const Home = () => {
   const imgStyle = {
@@ -86,7 +89,7 @@ const Home = () => {
         width="100%"
       >
         <AutoplaySlider>
-          <Box id="nature" data-src="nature.png" />
+          <Box  id="nature" data-src="nature.png" />
           <Box data-src="motor.png" />
         </AutoplaySlider>
       </Box>
