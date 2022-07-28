@@ -20,13 +20,13 @@ const NavBar = () => {
         display={"flex"}
         justifyContent={"space-evenly"}
       >
-        <Link fontWeight={"bold"} color={"#FFF"}>
+        <Link  fontWeight={"bold"} color={"#FFF"}>
           INÍCIO
         </Link>
-        <Link fontWeight={"bold"} color={"#FFF"}>
+        <Link href="#aboutUs" fontWeight={"bold"} color={"#FFF"}>
           SOBRE
         </Link>
-        <Link fontWeight={"bold"} color={"#FFF"}>
+        <Link href="#pessoas" fontWeight={"bold"} color={"#FFF"}>
           PESSOAS
         </Link>
         <Link fontWeight={"bold"} color={"#FFF"}>

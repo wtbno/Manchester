@@ -1,21 +1,9 @@
-import React, { useRef, Component } from "react";
-import { ReactDOM } from "react";
+import React, { useRef } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import AwesomeSlider from "react-awesome-slider";
-
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
-
-
-
-import {
-  Box,
-  Text,
-  Image,
-  Container,
-
-  Link,
-} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import NavBar from "../../components/NavBar";
 
 //Slider
@@ -46,7 +34,7 @@ const Home = () => {
   };
   return (
     <>
-     <NavBar/>
+      <NavBar />
 
       <Box
         display={"flex"}
@@ -55,129 +43,54 @@ const Home = () => {
         width={"100%"}
       >
         <AutoplaySlider play={true} cancelOnInteraction={false} interval={6000}>
-          <div data-src="box1.png" />
-          <div data-src="boxqueijos.png" />
-          <div data-src="queijos.jpg" />
-          <div data-src="ypanema.jpg" />
-          <div data-src="allcheese.png" />
-          <div data-src="campoLargo.jpg" />
-          <div data-src="estrada.jpg" />
-          <div>
+          <Box data-src="box1.png" />
+          <Box data-src="boxqueijos.png" />
+          <Box data-src="queijos.jpg" />
+          <Box data-src="ypanema.jpg" />
+          <Box data-src="allcheese.png" />
+          <Box data-src="campoLargo.jpg" />
+          <Box data-src="estrada.jpg" />
+          <Box>
             <img src="queijo3.jpg" />
-          </div>
+          </Box>
         </AutoplaySlider>
       </Box>
-      
 
       <Box
-        // border={"5px solid #0a7a00"}
-        marginTop="10px"
         display="flex"
         justifyContent="center"
         alignItems="center"
         width="100%"
-        //height="100px"
       >
-        <Image
-          boxShadow="0 -1px 8px 1px rgba(0,0,0,0.5)"
-          src="/factory.png"
-          maxWidth="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        />
+        <AutoplaySlider>
+          <Box id="aboutUs" data-src="history.png" />
+          <Box data-src="factory.png" />
+          <Box data-src="hist1958.png" />
+        </AutoplaySlider>
       </Box>
       <Box
-        // border={"5px solid #0a7a00"}
-        marginTop="10px"
         display="flex"
         justifyContent="center"
         alignItems="center"
         width="100%"
-        //height="100px"
       >
-        <Image
-          boxShadow="0 -1px 8px 1px rgba(0,0,0,0.5)"
-          src="/estradaf.png"
-          maxWidth="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        />
+        <AutoplaySlider>
+          <Box id="pessoas" data-src="human.png" />
+          <Box data-src="respect.png" />
+        </AutoplaySlider>
       </Box>
       <Box
-        // border={"5px solid #0a7a00"}
-        marginTop="10px"
         display="flex"
         justifyContent="center"
         alignItems="center"
         width="100%"
-        //height="100px"
       >
-        <Image
-          boxShadow="0 -1px 8px 1px rgba(0,0,0,0.5)"
-          src="/anyway.png"
-          maxWidth="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        />
+        <AutoplaySlider>
+          <Box id="nature" data-src="nature.png" />
+          <Box data-src="motor.png" />
+        </AutoplaySlider>
       </Box>
-      <Box
-        // border={"5px solid #0a7a00"}
-        marginTop="10px"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        width="100%"
-        //height="100px"
-      >
-        <Image
-          boxShadow="0 -1px 8px 1px rgba(0,0,0,0.5)"
-          src="/anyway.png"
-          maxWidth="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        />
-      </Box>
-      <Box
-        // border={"5px solid #0a7a00"}
-        marginTop="10px"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        width="100%"
-        //height="100px"
-      >
-        <Image
-          boxShadow="0 -1px 8px 1px rgba(0,0,0,0.5)"
-          src="/anyway.png"
-          maxWidth="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        />
-      </Box>
-      <Box
-        // border={"5px solid #0a7a00"}
-        marginTop="10px"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        width="100%"
-        //height="100px"
-      >
-        <Image
-          boxShadow="0 -1px 8px 1px rgba(0,0,0,0.5)"
-          src="/anyway.png"
-          maxWidth="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        />
-      </Box>
-      </>
+    </>
   );
 };
 
