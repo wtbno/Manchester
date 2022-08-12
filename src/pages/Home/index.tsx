@@ -12,6 +12,8 @@ import NavBar from "../../components/NavBar";
 
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
+
+
 const Home = () => {
   const imgStyle = {
     display: "flex",

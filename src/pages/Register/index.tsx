@@ -7,14 +7,26 @@ import {
   FormHelperText,
   Image,
   Button,
+  Toast,
+  useToast,
 } from "@chakra-ui/react";
 import { CircularProgress } from "@chakra-ui/react";
+import { InputGroup } from "@chakra-ui/react";
+import { InputRightElement } from "@chakra-ui/react";
 
 import { cpfMask } from "../../components/Helpers/CpfMask";
 
 const Login = () => {
   const [cpfClient, setCpfClient] = useState();
   const [isLoading, setIsLoading] = useState();
+  const [password, setPassword] = useState();
+  const [clientName, setClientName] = useState();
+  const [show, setShow] = React.useState(false);
+  const handleClick = () => setShow(!show);
+
+  const handleForms = () => {
+    if (clientName || password || cpfClient === "") return console.error("");
+  };
 
   return (
     <>
@@ -55,7 +67,6 @@ const Login = () => {
               type="text"
             />
             <Input
-             
               boxShadow={"0 -1px 8px 1px rgba(0,0,0,0.2)"}
               placeholder="CPF"
             />
@@ -65,11 +76,18 @@ const Login = () => {
               type="email"
             />
 
-            <Input
-              boxShadow={"0 -1px 8px 1px rgba(0,0,0,0.2)"}
-              placeholder="Senha"
-              type="password"
-            />
+            <InputGroup size="md">
+              <Input
+                pr="4.5rem"
+                type={show ? "text" : "password"}
+                placeholder="Enter password"
+              />
+              <InputRightElement width="4.5rem">
+                <Button h="1.75rem" size="sm" onClick={handleClick}>
+                  {show ? "Hide" : "Show"}
+                </Button>
+              </InputRightElement>
+            </InputGroup>
 
             <Button variant={"ghost"} colorScheme="red">
               <a href="/Login">Salvar</a>
