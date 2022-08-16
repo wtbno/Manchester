@@ -48,6 +48,7 @@ const Home = () => {
         width={"100%"}
       >
         <AutoplaySlider play={true} cancelOnInteraction={false} interval={6000}>
+        <Box data-src="anyway.png" />
           <Box data-src="box1.png" />
           <Box data-src="boxqueijos.png" />
           <Box data-src="queijos.jpg" />
