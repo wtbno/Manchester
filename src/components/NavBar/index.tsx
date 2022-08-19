@@ -8,6 +8,7 @@ const NavBar = () => {
       display="flex"
       justifyContent="flex-start"
       alignItems="center"
+      //maxW={"100%"}
       width="100%"
       height="15vh"
       borderBottom="1px solid #9B2813"
@@ -20,7 +21,7 @@ const NavBar = () => {
         display={"flex"}
         justifyContent={"space-evenly"}
       >
-        <Link fontWeight={"bold"} color={"#FFF"}>
+        <Link href="/home" fontWeight={"bold"} color={"#FFF"}>
           INÍCIO
         </Link>
         <Link href="#aboutUs" fontWeight={"bold"} color={"#FFF"}>
@@ -32,7 +33,7 @@ const NavBar = () => {
         <Link fontWeight={"bold"} color={"#FFF"}>
           CONTATO
         </Link>
-        <Link href="/Pedidos" fontWeight={"bold"} color={"#FFF"}>
+        <Link href="/pedidos" fontWeight={"bold"} color={"#FFF"}>
           PEDIDOS
         </Link>
       </Box>
