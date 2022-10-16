@@ -8,9 +8,6 @@ import NavBar from "../../components/NavBar";
 
 //Slider
 
-
-
-
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 
