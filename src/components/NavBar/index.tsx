@@ -30,10 +30,10 @@ const NavBar = () => {
         <Link href="#pessoas" fontWeight={"bold"} color={"#FFF"}>
           PESSOAS
         </Link>
-        <Link href="https://queijaria-manchester.goomer.app/" fontWeight={"bold"} color={"#FFF"}>
+        <Link  href="https://queijaria-manchester.goomer.app/" target={'_blank'} fontWeight={"bold"} color={"#FFF"}>
           GOOMER
         </Link>
-        <Link href="https://www.instagram.com/queijariamanchester/" fontWeight={"bold"} color={"#FFF"}>
+        <Link href="https://www.instagram.com/queijariamanchester/" target={'_blank'} fontWeight={"bold"} color={"#FFF"}>
           <Image src="./instagram.png" w={"30px"} h={"30px"}/>
         </Link>
         {/* <Link  fontWeight={"bold"} color={"#FFF"}>
