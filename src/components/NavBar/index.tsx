@@ -33,9 +33,7 @@ const NavBar = () => {
         <Link fontWeight={"bold"} color={"#FFF"}>
           CONTATO
         </Link>
-        <Link href="/pedidos" fontWeight={"bold"} color={"#FFF"}>
-          PEDIDOS
-        </Link>
+  
       </Box>
     </Box>
   );
