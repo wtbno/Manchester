@@ -31,7 +31,10 @@ const NavBar = () => {
           PESSOAS
         </Link>
         <Link fontWeight={"bold"} color={"#FFF"}>
-          CONTATO
+          <Image src="./instagram.png" w={"30px"} h={"30px"}/>
+        </Link>
+        <Link fontWeight={"bold"} color={"#FFF"}>
+          <Image src="./whatsapp.png" w={"30px"} h={"30px"}/>
         </Link>
   
       </Box>
